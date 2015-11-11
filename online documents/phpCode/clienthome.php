@@ -28,7 +28,7 @@ $max=200;
             </div>
                 <div class="span4 text-right">
                     <form method="post" action="clientsearch.php" class="" style="">
-                            <input type="text" name="srch_txt" class="input-medium search-query">
+                            <input type="text" name="srch_txt" class="input-medium search-query" required>
                             <button type="submit" name="srch" class="btn btn-success">Search</button>
                       </form>
                       </div>
@@ -54,11 +54,11 @@ $max=200;
 
               		<form method="post" enctype="multipart/form-data">
 
-      				<div class="span2"><input type="text"  name="name" class="span2" /></div>
-                    <div class="span2"><input type="text" name="email" class="span2" /></div>
-                    <div class="span2"><input type="text" name="phone" class="span2" /></div>
-                    <div class="span2"><input type="date" name="date" class="span2" /></div>
-                    <div class="span2"><input type="file"  id="myfile" name="myfile"  class=" span2"/></div>
+      				<div class="span2"><input type="text"  name="name" class="span2" required/></div>
+                    <div class="span2"><input type="email" name="email" class="span2" required/></div>
+                    <div class="span2"><input type="text" name="phone" class="span2" required/></div>
+                    <div class="span2"><input type="date" name="date" class="span2" required/></div>
+                    <div class="span2"><input type="file"  id="myfile" name="myfile"  class=" span2" required/></div>
                     <div class="span1">
                     <input type="submit" name="upload" value="upload" class="btn btn-success">
                     </form>
